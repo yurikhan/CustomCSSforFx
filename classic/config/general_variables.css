@@ -29,7 +29,7 @@
   --tab_max_width_mlt: 200px !important;
   
   /* for 'tabs_multiple_lines_v2.css' only */
-  --tabs-lines: 3 !important; 
+  --tabs-lines: 10 !important;
 
   /* for bookmarks_toolbar_multiple_lines.css */
   --bookmark_items_height: 26px !important; /* <- bookmark items - line height */
