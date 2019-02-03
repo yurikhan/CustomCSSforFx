@@ -1,0 +1,18 @@
+:root {
+  --colored_menubar_background_image: unset;
+  --general_toolbar_color_toolbars: rgba(0,0,0, 0.15);
+  --general_toolbar_color_navbar: var(--general_toolbar_color_toolbars);
+  --tabs_toolbar_color_tabs_not_on_top: unset;
+  --classic_squared_tabs_tab_text_color: unset;
+}
+
+/* Linux/macOS */
+/* space above navigation toolbar (OS titlebar) */
+/* set to '0', if no menubar is used */
+#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: 26px !important;
+}
+
+#TabsToolbar{
+  border-bottom: unset !important;
+}
