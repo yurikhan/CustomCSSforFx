@@ -15,4 +15,5 @@
 
 #TabsToolbar{
   border-bottom: unset !important;
+  -moz-padding-start: 0px !important;
 }
