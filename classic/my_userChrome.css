@@ -1,6 +1,6 @@
 :root {
   --colored_menubar_background_image: unset;
-  --general_toolbar_color_toolbars: rgba(0,0,0, 0.15);
+  --general_toolbar_color_toolbars: rgba(0,0,0, 0.04);
   --general_toolbar_color_navbar: var(--general_toolbar_color_toolbars);
   --tabs_toolbar_color_tabs_not_on_top: unset;
   --classic_squared_tabs_tab_text_color: unset;
@@ -16,4 +16,8 @@
 #TabsToolbar{
   border-bottom: unset !important;
   -moz-padding-start: 0px !important;
+}
+
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+  border-right: 1px solid var(--tabs-border-color) !important;
 }
