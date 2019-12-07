@@ -1,0 +1,74 @@
+:root {
+  --colored_menubar_background_image: unset;
+  --general_toolbar_color_toolbars: rgba(0,0,0, 0.15);
+  --general_toolbar_color_navbar: var(--general_toolbar_color_toolbars);
+  --tabs_toolbar_color_tabs_not_on_top: unset;
+  --classic_squared_tabs_tab_text_color: unset;
+  --tabs-navbar-shadow-size: 0px !important;
+  --tab-shadow-max-size: 0px !important;
+  --tab-border-radius: 0px !important;
+  --classic_squared_tabs-border-radius: 4px !important;
+  --proton-tab-block-margin: 0px !important;
+}
+
+/* Linux/macOS */
+/* space above navigation toolbar (OS titlebar) */
+/* set to '0', if no menubar is used */
+#main-window:not([tabsintitlebar]):not([sizemode="fullscreen"]) #nav-bar {
+  margin-top: 26px !important;
+}
+
+#navigator-toolbox {
+  border-bottom: none !important;
+}
+#TabsToolbar {
+  border-bottom-color: transparent !important;
+}
+
+/* Fix toolbar background colors */
+#nav-bar:not(:-moz-lwtheme),
+#TabsToolbar:not(:-moz-lwtheme) {
+  -moz-appearance: toolbar !important;
+}
+
+/* Compact navigation toolbar */
+:root {
+  --toolbar-start-end-padding: 4px !important;
+  --toolbarbutton-outer-padding: 0px !important;
+  --toolbarbutton-inner-padding: 4px !important;
+  --urlbar-icon-padding: 4px !important;
+}
+.urlbar-icon {
+  width: calc(16px + 2 * var(--urlbar-icon-padding)) !important;
+}
+
+/* Fitt’s law: Tabs must start at the left edge of the window */
+#TabsToolbar {
+  -moz-padding-start: 0px !important;
+}
+
+/* Fix container strip position */
+#tabbrowser-tabs spacer {
+  display: -moz-box !important;
+}
+
+/* Hide tab bar scroll buttons */
+/*#scrollbutton-up, #scrollbutton-down { display: none }*/
+
+/* Prevent horizontal scrolling in tab bar. I don’t know why this works or is needed */
+scrollbox[part][orient="horizontal"] {
+  margin-right: -8px !important;
+  padding-right: 8px !important;
+  scrollbar-width: unset !important;
+}
+
+/* Fix pinned tabs density */
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pinned] .tab-close-button {
+  display: none !important;
+}
+
+/* Fix megabar optimization */
+:-moz-any(.searchbar-textbox, #urlbar,#searchbar),
+#urlbar-container[breakout] #urlbar[breakout] {
+  font-size: inherit !important;
+}
