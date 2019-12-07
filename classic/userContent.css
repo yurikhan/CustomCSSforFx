@@ -48,12 +48,12 @@
 /* FIREFOX 68+ #################################################################################*/
 /* addons page appearance - [only use one at a time] (incl. version number & buttons) ***********/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_fx68.css"; /**/
-@import "./css/aboutaddons/addons_manager_alternative_appearance_fx75.css"; /**/
+/*@import "./css/aboutaddons/addons_manager_alternative_appearance_fx75.css"; /**/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_fx68.css"; /**/	/* <-- AERO colors */
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_fx75.css"; /**/	/* <-- AERO colors */
 
 /* version number for active add-ons [Fx 68+] ***************************************************/
-@import "./css/aboutaddons/addonlists_show_addon_version_number_fx68.css"; /**/
+/*@import "./css/aboutaddons/addonlists_show_addon_version_number_fx68.css"; /**/
 
 /* compact item lists - [only use one at a time] ************************************************/
 /* @import "./css/aboutaddons/addonlists_compact_fx68.css"; /**/ /* best with alternative_appearance_fx68+ */
@@ -125,7 +125,7 @@
 
 
 /* FIREFOX 60+ #################################################################################*/
-@import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
+/*@import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
 /* @import "./css/aboutaddons/recentupdates_category_last_category.css"; /**/
 /* @import "./css/aboutaddons/availableupdates_category_always_visible.css"; /**/
 /* @import "./css/aboutaddons/availableupdates_category_last_category.css"; /**/
@@ -136,7 +136,7 @@
 /************************************************************************************************/
 
 /* preferences page appearance - [only use one at a time] ***************************************/
-@import "./css/aboutpreferences/preferences_alternative_appearance.css"; /**/
+/*@import "./css/aboutpreferences/preferences_alternative_appearance.css"; /**/
 /* @import "./css/aboutpreferences/preferences_alternative_appearance_aero.css"; /**/	/* <-- AERO colors */
 /* @import "./css/aboutpreferences/preferences_alternative_appearance_v2.css"; /**/
 
