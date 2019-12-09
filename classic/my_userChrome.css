@@ -1,3 +1,5 @@
+@import url("my_tabbar_traditionalOk.css");
+
 :root {
   --colored_menubar_background_image: unset;
   --general_toolbar_color_toolbars: rgba(0,0,0, 0.15);

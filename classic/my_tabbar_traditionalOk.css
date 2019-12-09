@@ -1,0 +1,14 @@
+/* Tab bar colors – TraditionalOk theme */
+#TabsToolbar:not(:-moz-lwtheme) {
+  background: #edeceb !important;
+}
+#TabsToolbar:not(:-moz-lwtheme) tab {
+  background: linear-gradient(to bottom, #e6e5e4, #cccbca) !important;
+}
+.tab-background[multiselected="true"], .tab-background[selected="true"] {
+  background: #f9f8f7 !important;
+}
+
+:root {
+  --general_toolbar_color_toolbars: rgba(0,0,0, 0.05) !important;
+}
