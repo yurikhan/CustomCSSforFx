@@ -16,11 +16,12 @@
   margin-top: 26px !important;
 }
 
+/* Remove bottom border on tabbar */
 #navigator-toolbox, #TabsToolbar {
   border-bottom: none !important;
 }
 
-/* Fitt’s law */
+/* Fitt’s law: Put leftmost tab at the left edge */
 #TabsToolbar {
   -moz-padding-start: 0px !important;
 }
@@ -30,8 +31,23 @@
   display: -moz-box !important;
 }
 
-
 /* Fix megabar optimization */
 :-moz-any(.searchbar-textbox, #urlbar,#searchbar) {
   font-size: inherit !important;
+}
+
+/* Restore tab borders */
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+  display: -moz-box !important;
+  border-left: 1px solid var(--lwt-background-tab-separator-color, currentColor) !important;
+  /*border-left: 1px solid var(--lwt-background-tab-separator-color, red) !important;*/
+}
+#tabbrowser-tabs:not([movingtab]) >
+  .tabbrowser-arrowscrollbox >
+  .tabbrowser-tab[beforeselected-visible]::after,
+#tabbrowser-tabs[movingtab] >
+  .tabbrowser-arrowscrollbox >
+  .tabbrowser-tab[visuallyselected]::before,
+.tabbrowser-tab[visuallyselected]::after {
+  border-color: var(--tabs-border-color) !important;
 }
